@@ -11,4 +11,13 @@
         <servlet-name>validateUsername</servlet-name>
         <url-pattern>/validateUsername</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addToCart</servlet-name>
+        <servlet-class>com.uiyllong.testAjax.app.servlet.addToCart</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addToCart</servlet-name>
+        <url-pattern>/addToCart</url-pattern>
+    </servlet-mapping>
 </web-app>

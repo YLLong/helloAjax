@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!-- 配置当前 web 应用的初始化参数 -->
+    <context-param>
+        <param-name>username</param-name>
+        <param-value>uiyllong</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>password</param-name>
+        <param-value>106601</param-value>
+    </context-param>
+
+    <!-- 配置 Servlet -->
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>com.uiyllong.javaweb.servlet.loginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>forwardServlet</servlet-name>
+        <servlet-class>com.uiyllong.javaweb.servlet.forwardServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>forwardServlet</servlet-name>
+        <url-pattern>/forwardServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>testServlet</servlet-name>
+        <servlet-class>com.uiyllong.javaweb.servlet.testServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>testServlet</servlet-name>
+        <url-pattern>/testServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>redirectServlet</servlet-name>
+        <servlet-class>com.uiyllong.javaweb.servlet.redirectServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>redirectServlet</servlet-name>
+        <url-pattern>/redirectServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
