@@ -55,4 +55,14 @@
         <servlet-name>redirectServlet</servlet-name>
         <url-pattern>/redirectServlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListAllStudents</servlet-name>
+        <servlet-class>com.uiyllong.javaweb.servlet.ListAllStudents</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ListAllStudents</servlet-name>
+        <url-pattern>/ListAllStudents</url-pattern>
+    </servlet-mapping>
 </web-app>
